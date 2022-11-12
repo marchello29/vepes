@@ -16,8 +16,9 @@ install_server () {
 	if [[ $choice == "1" ]]; then
 		clear
     echo "> Installing Paper..."
-    wget -O paperinstall.sh https://github.com/marchello29/vepes/raw/main/paperinstall.sh 
+    wget -O paperinstall.sh https://github.com/marchello29/vepes/raw/main/paperinstall.sh > /dev/null 2>&1
 		bash paperinstall.sh
+		rm -rf paperinstall.sh
 	fi
 }
 
